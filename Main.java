@@ -1,32 +1,34 @@
-package com.example.helloworld;
+package com.example.helloworld.calculate;
+
+import com.example.helloworld.Calculate;
+import com.example.helloworld.Main;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        int firstNumber;
-        int secondNumber;
-        int result = 0;
         String action;
+        Calculate calculate = new Calculate();
+        Scanner input = new Scanner(System.in);
+    }
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter first number:");
-        firstNumber = scanner.nextInt();
-        System.out.println("Enter the math operand (+, -, *, /)");
-        action = scanner.next();
-        System.out.println("Enter second integer number:");
-        secondNumber = scanner.nextInt();
-        scanner.close();
-
-        switch (action) {
-            case "+" -> result = firstNumber + secondNumber;
-            case "-" -> result = firstNumber - secondNumber;
-            case "*" -> result = firstNumber * secondNumber;
-            case "/" -> result = firstNumber / secondNumber;
-            default -> System.out.println("Invalid operator");
+    public static void calculate(char action) {
+        default
+        float calculate;
+        float firstNumber, char action, float secondNumber; {
+            float result = 0;
+            switch (action) {
+                Object result;
+                case "+" -> result = firstNumber + secondNumber;
+                case "-" -> result = firstNumber + secondNumber;
+                case "*" -> result = firstNumber * secondNumber;
+                case "/" -> result = firstNumber / secondNumber;
+            }
+            return result;
         }
-        System.out.println("Result is: " + result);
+
     }
 }
+
+
